@@ -18,7 +18,6 @@ BillingCycle.route('count', (req, res, next) => {
 BillingCycle.route('get', (req, res, next) => {
 
     BillingCycle.find({}, (err, docs) => {
-
         if(!err) {
             res.json(docs)
         } else {
